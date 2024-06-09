@@ -56,7 +56,7 @@ export default defineComponent({
 
       setTimeout(() => {
         this.$store.commit('startGame');
-      }, 5000)
+      }, 6000)
     }, [], 1.7)
   },
   created() {

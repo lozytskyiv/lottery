@@ -1,6 +1,9 @@
 <template>
   <div class="footer">
-    <div class="balance">{{$store.state.balance}} EUR</div>
+    <div class="balance">
+      <p>{{$store.state.balance}} EUR</p>
+      <span>1 Ticket = 1 EUR</span>
+    </div>
     <div class="tickets" ref="footerTickets">
       <div class="ticketWrapper" v-for="(ticket, i) in $store.state.tickets" :key="i">
         <Ticket :number="ticket" size="small" />
@@ -33,7 +36,7 @@ export default defineComponent({
   padding: 20px 30px;
   background: darkslateblue;
   color: white;
-  height: 16vh;
+  height: 117px;
 }
 
 .balance {
@@ -41,7 +44,14 @@ export default defineComponent({
   padding: 10px 20px;
   font-size: 20px;
   display: flex;
-  align-items: center;justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  gap: 8px;
+}
+
+span {
+  font-size: 16px;
 }
 
 .tickets {

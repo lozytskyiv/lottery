@@ -5,6 +5,7 @@
     <BuyTicketsTable />
     <GameContent />
     <WinningModal />
+    <WelcomeModal />
     <Footer />
   </div>
 </template>
@@ -17,6 +18,7 @@ import GameContent from '@/components/GameContent.vue';
 import SettingsSideBar from '@/components/SettingsSideBar.vue';
 import BuyTicketsTable from '@/components/BuyTicketsTable.vue';
 import WinningModal from "@/components/WinningModal.vue";
+import WelcomeModal from "@/components/WelcomeModal.vue";
 
 export default defineComponent({
   name: 'App',
@@ -27,6 +29,7 @@ export default defineComponent({
     GameContent,
     SettingsSideBar,
     BuyTicketsTable,
+    WelcomeModal,
   }
 });
 </script>

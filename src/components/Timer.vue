@@ -12,7 +12,6 @@ let timerId
 export default defineComponent({
   name: "TheTimer",
   mounted() {
-    this.$store.commit('startGame');
     if (this.$store.state.timer === 15) {
       timerId = setInterval(() => {
         this.$store.commit('setTimer', this.$store.state.timer - 1)

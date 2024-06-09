@@ -28,12 +28,6 @@
 import { defineComponent } from "vue";
 import { onTick } from 'vue3-pixi';
 
-interface IProps {
-  x: number,
-  y: number,
-  index: number
-}
-
 export default defineComponent({
   name: "TheLight",
   data() {

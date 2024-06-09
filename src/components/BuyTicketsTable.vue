@@ -44,7 +44,7 @@ export default defineComponent({
   }
   .buyTicketsTable {
     background: darkslateblue;
-    width: 60vw;
+    width: 50vw;
     height: 60vh;
     pointer-events: auto;
     padding: 40px 30px;

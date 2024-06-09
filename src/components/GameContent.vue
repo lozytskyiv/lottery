@@ -1,6 +1,5 @@
 <template>
   <div class="gameContent" :class="$store.state.showTicketsTable ? 'left' : ''">
-    <div>Game {{$store.state.winningTicket}} {{$store.state.timer}}</div>
     <DrumContainer />
   </div>
 </template>
@@ -17,7 +16,7 @@ export default defineComponent({
     DrumContainer
   },
   mounted() {
-    this.$store.commit('startGame');
+    this.$store.commit('showWelcomeModal');
   },
   computed: {...mapState['timer']},
   created() {
@@ -44,7 +43,7 @@ export default defineComponent({
   align-items: flex-start;
   gap: 20px;
   padding: 20px 30px;
-  padding-left: 35vw;
+  padding-left: 30vw;
   background: darkgreen;
   color: black;
   transition: 0.4s;

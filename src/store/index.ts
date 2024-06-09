@@ -4,6 +4,7 @@ interface State {
   rotateWheel: boolean,
   showTicketsTable: boolean,
   showSettings: boolean,
+  showWelcome: boolean,
   timer: number,
   balance: number,
   tickets: string[],
@@ -20,9 +21,10 @@ export default createStore({
   state: {
     rotateWheel: false,
     showTicketsTable: false,
+    showWelcome: false,
     showSettings: false,
     timer: -1,
-    balance: 100,
+    balance: 3,
     tickets: [],
     winningTicket: 0,
     win: 0,
@@ -61,6 +63,7 @@ export default createStore({
       state.showTicketsTable = !state.showTicketsTable
     },
     startGame(state) {
+      state.showWelcome = false;
       state.showTicketsTable = true;
       state.showWinningModal = false;
       state.rotateWheel = true;
@@ -81,6 +84,9 @@ export default createStore({
     setFooterTicketsPosition(state, position) {
       state.footerTicketsPosition.left = position.left;
       state.footerTicketsPosition.top = position.top;
+    },
+    showWelcomeModal(state) {
+      state.showWelcome = true;
     }
   },
   actions: {
