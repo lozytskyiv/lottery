@@ -9,8 +9,8 @@
 
 <script lang="ts">
 import { defineComponent } from "vue";
-import MenuButton from '@/components/MenuButton';
-import Timer from '@/components/Timer';
+import MenuButton from '@/components/MenuButton.vue';
+import Timer from '@/components/Timer.vue';
 
 export default defineComponent({
   name: "TheHeader",

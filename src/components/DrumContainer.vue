@@ -9,7 +9,7 @@
 
 <script lang="ts">
 import { defineComponent } from "vue";
-import Drum from '@/components/Drum';
+import Drum from '@/components/Drum.vue';
 
 export default defineComponent({
   name: "DrumContainer",

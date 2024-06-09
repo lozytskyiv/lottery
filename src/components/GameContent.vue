@@ -8,7 +8,7 @@
 <script lang="ts">
 import { defineComponent } from "vue";
 import {mapState} from 'vuex';
-import DrumContainer from '@/components/DrumContainer';
+import DrumContainer from '@/components/DrumContainer.vue';
 
 
 export default defineComponent({

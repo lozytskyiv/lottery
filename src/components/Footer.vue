@@ -11,7 +11,7 @@
 
 <script lang="ts">
 import { defineComponent } from "vue";
-import Ticket from '@/components/Ticket';
+import Ticket from '@/components/Ticket.vue';
 
 export default defineComponent({
   name: "TheFooter",

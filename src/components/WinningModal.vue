@@ -48,7 +48,7 @@ export default defineComponent({
   methods: {
 
     onDrawRounded(e: GraphicsIns) {
-      e.beginFill('#483D8B')
+      e.beginFill(0x483D8B)
       e.drawRoundedRect(0, 0, 600, 400, 30)
     }
   }
